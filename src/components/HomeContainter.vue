@@ -41,8 +41,19 @@
       methods:{
           getlunbotu(){
           //  获取轮播图的方法
-            this.$http.get("/api/getlunbo").then(result=>{
-              console.log(result.body);
+            this.$http({
+              url: '/api',
+              method: 'get',
+              // 请求体重发送的数据
+              data: {
+                type: 'top'
+              },
+              // 设置请求头
+              headers: {
+                'Authorization': 'APPCODE bfdc628102d14dbdbc7c12fed9761b9e'
+              }
+            }).then(result=>{
+              console.log(result.body.result.data)
             })
           }
       }

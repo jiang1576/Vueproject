@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
         '/api': {  //使用"/api"来代替"http://f.apiplus.c"
-          target: 'https://vue.studyit/api', //源地址
+          target: 'http://toutiao-ali.juheapi.com/toutiao/index', //源地址
           changeOrigin: true, //改变源
           pathRewrite: {
             '^/api': '' //路径重写

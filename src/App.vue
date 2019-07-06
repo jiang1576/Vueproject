@@ -44,6 +44,7 @@ export default {
 
 #app {
   margin-top: 40px;
+  margin-bottom: 50px;
   overflow-x: hidden;
 
 }
