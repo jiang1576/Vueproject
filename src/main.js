@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router/index'
-import {Header,Swipe, SwipeItem,Toast} from 'mint-ui'
+import {Header,Swipe, SwipeItem,Toast,Button} from 'mint-ui'
 import VueRouter from 'vue-router'
 import VueResource from 'Vue-resource'
 Vue.use(VueResource)
@@ -15,6 +15,7 @@ Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
 Vue.config.productionTip = false;
 Vue.component(Header.name,Header);
+Vue.component(Button.name,Button);
 
 
 
